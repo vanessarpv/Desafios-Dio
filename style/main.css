@@ -1,0 +1,98 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial black, Helvetica, sans-serif;
+    font-size: 60px;
+}
+header nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 30px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 30px;
+    background-image: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)75%), url('/img/capaLucifer.jpg');
+    background-size: cover;
+    height: 1000px;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme-principal .descricao{
+    margin-top: 3%;
+    margin-bottom: 90px;
+
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.subtitulo{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+ .botao{
+background-color: rgba(0, 0, 0, .50);
+border:none;
+color: white;
+
+padding: 15px 20px;
+margin-right: 20px;
+font-size: 30px;
+
+cursor: pointer;
+transition: .3s ease all;
+
+
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 30px;
+    
+}
+.filme-principal .container{
+width: 50%;
+
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
